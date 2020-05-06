@@ -10,4 +10,5 @@ urlpatterns = [
     path('api/test/create/', ApplicationView.as_view({'post': 'create'}), name='application-create'),
     path('api/test/update/', ApplicationView.as_view({'post': 'update'}), name='application-update'),
     path('api/test/delete/', ApplicationView.as_view({'post': 'destroy'}), name='application-destroy'),
+    path('api/test/change_key/', ApplicationView.as_view({'post': 'change_key'}), name='application-change-key'),
 ]
